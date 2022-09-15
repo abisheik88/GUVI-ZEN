@@ -1,0 +1,131 @@
+1. Create your own resume in JSON format?
+
+var myResume={
+    "basics": {
+      "name": "Abisheik.V",
+      "email": "abishekvijayarangan@gamil.com",
+      "phone": 9080676118,
+      "degree": "B.tech",
+      "location": {
+        "address": "4/109 rice mill street,Agaravallam",
+        "postalCode": 609402,
+        "city": "Mayiladuthurai",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      
+    },
+    
+    "education": [
+      {
+        "institution": "Sastra deemed university",
+        "department": "Electronics and communication engineering",
+        "batch start year": 2017,
+        "batch end year": 2021,
+        "gpa": 6.64,
+      }
+    ],
+     "skills": [
+      {
+        "name": "javascript",
+        "level": "beginer",
+        "project": [
+          "Intrapartum survielience"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,English",
+      }
+    ],
+   
+    
+  }
+  console.log(myResume);
+  
+  
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 2.For the given JSON iterate over all for loops?
+ 
+ For loop in JSON:
+ 
+ var details =[
+  {
+  "name":"abisheik",
+  "age":"23",
+},
+{
+  "name":"Deepak",
+  "age":"21"
+},
+{
+  "name":"Surya",
+  "age":"25"
+}
+]
+for(var i=0;i<details.length;i++){
+  console.log(details[i].name)
+}
+
+OUTPUT:
+abisheik
+Deepak
+Surya
+ 
+ 
+ 
+ 
+ 
+ For in loop in JSON :
+ 
+var details ={
+  "name":"abisheik",
+  "age":"23",
+  "Experience":"Fresher",
+  "Salary":"6Lpa"
+}
+for(var i in details){
+  console.log(i,details[i])
+}
+
+
+OUTPUT:
+
+name abisheik
+age 23
+Experience Fresher
+Salary 6Lpa
+
+
+
+For of loop :
+
+var array=["Abisheik","Surya","sanjai"]
+
+for(var i of array){
+  console.log(i)
+}
+
+OUTPUT:
+Abisheik
+Surya
+Sanjai
+
+For Each loop:
+
+var array=["Abisheik","Surya","sanjai"]
+
+array.forEach(myNames)
+function myNames(names){
+console.log(names)
+}
+
+
+
+OUTPUT:
+Abisheik
+Surya
+Sanjai
